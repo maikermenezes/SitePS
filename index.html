@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+  />
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+  <title>Processo Seletivo</title>
+  
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+</head>
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo-nav.png" alt="logo" width="120">
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#nav" 
+        aria-controls="nav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#instituicao">Instituição</a></li>
+          <li class="nav-item"><a class="nav-link" href="#valores">Valores</a></li>
+          <li class="nav-item"><a class="nav-link" href="#inscricao">Inscrição</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <header id="carousel" class="carousel slide bg-dark" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/banner-1.jpg" class="w-100 img-fluid" alt="Pessoas reunidas">
+        <div class="text-center position-absolute top-50 start-50 translate-middle">
+          <h1 class="display-5 text-light font-weight-bold mb-4">Quer trabalhar <br> com a gente?</h1>
+          <a href="#inscricao" class="btn btn-lg text-white text-decoration-none" role="button">
+            Inscrição
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/banner-2.jpg" class="w-100 img-fluid" alt="Pessoas trabalhando">
+        <div class="text-center position-absolute top-50 start-50 translate-middle">
+          <h1 class="display-5 text-light font-weight-bold mb-3">Tem alguma <br> dúvida?</h1>
+          <a href="#contato" class="btn btn-lg text-white text-decoration-none" role="button">
+            Contato
+          </a>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </header>
+
+  <!-- Instituição -->
+  <section id="instituicao" class="mt-5 pt-4">
+    <div class="container">
+      <h3 class="text-center font-weight-bold pt-5 pb-4">Instituição</h3>
+      <div class="row">
+        <div class="col-md order-md-2 d-flex justify-content-center mt-4">
+          <img src="./images/undraw_short_bio.svg" alt="Descrição" class="img-fluid w-75">
+        </div>
+        <div class="col-md order-md-1 d-flex justify-content-center align-items-center mt-4">
+          <div class="accordion w-100" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  A Empresa
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  Somos a empresa júnior de tecnologia da informação da Universidade Federal Rural de Pernambuco, formada por estudantes e sem fins lucrativos, buscamos o aprimoramento dos alunos dos curso de graduação através da realização de projetos e da vivência empresarial, atuando no desenvolvimento de soluções para a web e dispositivos móveis, buscando sempre semear a cultura empreendedora aliada a tecnologia dentro do espaço universitário.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Missão
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  Apresentar soluções para problemas diversos através da Tecnologia da Informação, proporcionando a seus associados as condições necessárias à aplicação de seus conhecimentos relativos à sua área de formação profissional.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Visão
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                  Ser uma das referências estaduais como empresa junior de tecnologia da informação em 2018.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Valores-->
+  <section id="valores" class="mt-5 pt-4">
+    <div class="container">
+      <h3 class="text-center font-weight-bold pt-5 pb-4">Valores</h3>
+      <div id="card-group" class="card-group">
+        <div class="card d-flex justify-content-evenly">
+          <img class="card-img-top" src="./images/icones/mala.svg" alt="icon">
+          <p class="card-text">Potencializar o comportamento empreendedor</p>
+        </div>
+        <div class="card d-flex justify-content-evenly">
+          <img class="card-img-top" src="./images/icones/celular.svg" alt="icon">
+          <p class="card-text">Desenvolver a ética profissional</p>
+        </div>
+        <div class="card d-flex justify-content-evenly">
+          <img class="card-img-top" src="./images/icones/amp.svg" alt="icon">
+          <p class="card-text">Busca pela melhoria contínua</p>
+        </div>
+        <div class="card d-flex justify-content-evenly">
+          <img class="card-img-top" src="./images/icones/like.svg" alt="icon">
+          <p class="card-text">Qualidade dos produtos e serviços</p>
+        </div>
+        <div class="card d-flex justify-content-evenly">
+          <img class="card-img-top" src="./images/icones/pessoa.svg" alt="icon">
+          <p class="card-text">Criatividade e inovação aliados aos resultados</p>
+        </div>
+        <div class="card d-flex justify-content-evenly">
+          <img class="card-img-top" src="./images/icones/add.svg" alt="icon">
+          <p class="card-text">Projeto orientado a pessoas</p>
+        </div>
+        <div class="card d-flex justify-content-evenly">
+          <img class="card-img-top" src="./images/icones/linha.svg" alt="icon">
+          <p class="card-text">A difusão e a instrumentalização do conhecimento</p>
+        </div>
+        <div class="card d-flex justify-content-evenly">
+          <img class="card-img-top" src="./images/icones/quadrado.svg" alt="icon">
+          <p class="card-text">Interdisciplinaridade e transdisciplinaridade</p>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+<!-- Inscrição -->
+  <section id="inscricao" class="mt-5 pt-4">
+    <div class="container">
+      <h3 class="text-center font-weight-bold pt-5 pb-4">Inscrição</h3>
+      <div class="row d-flex flex-column flex-md-row">
+        <div class="col d-flex justify-content-center mb-3">
+          <img src="./images/undraw_file1.svg" alt="Inscrição" class="img-fluid w-75">
+        </div>
+
+        <div id="inscricao" class="col d-flex flex-column justify-content-center align-items-center text-center text-sm-start">
+          <div class="d-flex flex-column align-items-center mb-5">
+            <p class="">Para informações mais detalhadas em relação ao processo, acesse o edital, é nele que você vai entender mais sobre todas as fases do processo e suas datas de realização!</p>
+            <button type="button" class="btn btn-inscricao rounded px-4">
+              <a href="#" class="text-decoration-none text-white">Edital</a>
+            </button>
+          </div>
+          
+          <div class="d-flex flex-column align-items-center">
+            <p>Caso queira se inscrever, basta acessar o formulário abaixo e responder com as informações necessárias.</p>
+            <button type="button" class="btn btn-inscricao rounded px-3">
+              <a href="#" class="text-decoration-none text-white">Inscrição</a>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contato -->
+  <section id="contato" class="mt-5 pt-4">
+    <div class="container">
+      <h3 class="text-center font-weight-bold pt-5 pb-4">Contato</h3>
+      <div class="row d-flex flex-column flex-md-row align-items-center align-items-md-stretch mt-4 pb-5">
+
+        <form action="" class="col row mt-4">
+          <div class="col-12 mb-3">
+            <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" aria-label="E-mail">
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" id="inputName" placeholder="Nome" aria-label="Nome">
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <input type="number" class="form-control" id="inputPeriodo" placeholder="Período" aria-label="Período" min="1" max="10">
+          </div>
+
+          <div class="col-12">
+            <textarea class="form-control" aria-label="Descrição" rows="5" placeholder="Descrição"></textarea>
+          </div>
+          
+          <div class="col-12 my-3">
+            <input type="file" class="form-control" id="inputUpload">
+          </div>
+                 
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-contato rounded px-3 text-white w-100">Enviar</button>
+          </div>
+        </form>
+
+        <div class="col mt-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7901.698353525868!2d-34.947148!3d-8.014485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x86728b8811b23195!2sSeed%20a%20Bit%20Tecnologia!5e0!3m2!1sen!2sbr!4v1610825899970!5m2!1sen!2sbr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-5 mt-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col d-flex justify-content-center">
+          <img
+            src="images/seed_footer.png"
+            alt="Logo da Seed A Bit"
+            class="img-fluid w-75"
+          />
+        </div>
+
+        <div class="col-md-4 ms-md-5">
+          <address class="text-white text-center">
+            <a href="tel:08133206066">
+              <i class="fas fa-phone me-1"></i>(81) 3320-6066</a>
+            <br/>
+
+            <a href="mailto:contato@seedabit.org.br">
+              <i class="far fa-envelope me-1"></i>contato@seedabit.org.br</a>
+
+            <p>
+              <i class="fas fa-map-marker-alt me-1"></i>
+              Rua Dom Manoel de Medeiros, S/N Dois Irmãos - CEP: 52171-900 -
+              Recife/PE
+            </p>
+          </address>
+        </div>
+
+        <div class="col d-flex flex-column align-items-center">
+          <a href="#"><i class="fab fa-facebook-f fa-lg p-2"></i>Facebook</a>
+          <a href="#" class="ps-2"><i class="fab fa-instagram fa-lg p-2"></i>Instagram</a>
+          <a href="#"><i class="fab fa-linkedin-in fa-lg p-2"></i>LinkedIn</a>
+          <a href="#"><i class="fab fa-medium-m fa-lg p-2"></i>Medium</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center text-white bg-copyright">
+      <p class="mb-0">
+        <small><i class="far fa-copyright m-1"></i>2021 Seed a Bit Tecnologia - Todos os direitos reservados</small>
+      </p>
+    </div>
+
+  </footer>
+
+  
+  <!-- Boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <!-- Slick -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

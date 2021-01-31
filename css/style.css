@@ -1,0 +1,168 @@
+/* Fonts and variables */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+
+:root {
+	--main-bg-color: #272738;
+	--secondary-bg-color: #3d4a84;
+	--border-color: rgba(61, 74, 132, 0.6);
+	--box-shadow: 0 0 0 0.25rem rgba(61, 74, 132, 0.25);
+}
+
+* {
+	font-family: "Titillium Web", sans-serif;
+}
+
+/* Classes we use */
+
+.bg-blue {
+	background-color: var(--main-bg-color);
+}
+
+.bg-copyright {
+	background: #3c3c56;
+}
+
+.font-weight-bold {
+	font-weight: 700 !important;
+}
+
+/* Modifications */
+
+header {
+	margin-top: 60px;
+}
+
+/* Carousel */
+
+#carousel .btn,
+#inscricao .btn,
+#contato .btn {
+	background-color: var(--secondary-bg-color);
+}
+
+#carousel .btn {
+	height: 10%;
+	width: 60%;
+	font-size: 125%;
+	text-align: center;
+	align-items: center;
+}
+
+#carousel .btn:hover,
+#inscricao .btn-inscricao:hover,
+#contato .btn-contato:hover {
+	background-color: var(--main-bg-color);
+}
+
+.carousel-item {
+	max-height: 94vh;
+}
+
+.carousel-item > img {
+	opacity: 0.5;
+}
+
+/* Accordion */
+
+#accordion .accordion-button:focus {
+	border-color: var(--border-color);
+	box-shadow: var(--box-shadow);
+}
+
+#accordion .accordion-button:not(.collapsed) {
+	color: var(--secondary-bg-color);
+	background-color: #fff;
+}
+
+#accordion .accordion-button:not(.collapsed)::after {
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233d4a84'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+/* Cards and Slick Slide */
+
+#card-group .card {
+	background: var(--secondary-bg-color);
+	color: white;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+	margin: 2vh 1vw;
+	padding: 1vw;
+	height: 35vh;
+	transition: all 0.4s;
+}
+
+#card-group .card:hover {
+	transform: scale(1.05);
+}
+
+.card-text {
+	text-align: center;
+	font-size: 2.5vh;
+}
+
+.card-img-top {
+	height: 35%;
+}
+
+#card-group .slick-slide {
+	outline: none;
+}
+
+#card-group .slick-prev:before,
+#card-group .slick-next:before {
+	color: black;
+}
+
+/* Footer */
+footer {
+	background-color: var(--main-bg-color);
+}
+
+footer a {
+	text-decoration: none;
+	color: #ffffff;
+	transition: 0.3s ease-out;
+}
+
+footer a:hover {
+	color: #a3a2be;
+}
+
+/* Icons */
+
+i {
+	vertical-align: middle;
+}
+
+/* Form */
+
+#contato input,
+#contato textarea {
+	border: 1.5px solid var(--secondary-bg-color);
+}
+
+#contato input:focus,
+#contato textarea:focus {
+	border-color: var(--border-color);
+	box-shadow: var(--box-shadow);
+}
+
+@media screen and (max-width: 480px) {
+
+	#carousel .btn,
+    #inscricao .btn,
+    #contato .btn {
+	background-color: var(--secondary-bg-color);
+	height: 7vh;
+	width: 15vh;
+	font-size: 80%;
+}
+    #carousel a{
+	font-size: 2.25vh;
+}
+	#card-group .card {
+		margin: 2vh 2vw;
+		padding: 6vw;
+		height: 30vh;
+	}
+}
